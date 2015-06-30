@@ -1,0 +1,15 @@
+<div class="container">
+    <h2> Posts by Author</h2>
+	<a ng-href="/#/"> Back </a>
+	<select ng-change="getPostsByAuthor()" ng-model="author" ng-options="name as name for name in authors"></select>
+	<table>
+		<tr>
+			<th> Title </th>
+			<th> Date </th>
+		</tr>
+		<tr ng-repeat="post in posts">
+			<td><a ng-href="/#/view/{{post.title}}" >{{post.title}}</a></td>
+			<td>{{post.timestamp}}</td>
+		</tr>
+	</table>
+</div>

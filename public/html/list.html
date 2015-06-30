@@ -1,0 +1,16 @@
+<div class="container">
+    <h2> List Of Posts </h2>
+	<a ng-href="/#/add"> Add Post </a> | <a ng-href="/#/mostVisits"> Most Visits </a> | <a ng-href="/#/listByAuthor"> By Author </a>
+	<table>
+		<tr>
+			<th> Title </th>
+			<th> Author </th>
+			<th> Date </th>
+		</tr>
+		<tr ng-repeat="post in posts">
+			<td><a ng-href="/#/view/{{post.title}}" >{{post.title}}</a></td>
+			<td>{{post.author}}</td>
+			<td>{{post.timestamp}}</td>
+		</tr>
+	</table>
+</div>

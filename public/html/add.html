@@ -1,0 +1,9 @@
+<div class="container">
+    <h2> Add New Post </h2>
+	<form>
+		Title: <input type="text" ng-model="newpost.title"><br/>
+		Author: <input type="text" ng-model="newpost.author"><br/>
+		Content: <textarea rows="4" cols="50" ng-model="newpost.description"></textarea>
+	</form>
+	<a ng-href="/#/" >Back</a>&nbsp;&nbsp;&nbsp;<input type="submit" value="Submit" ng-click="submit()" />
+</div>
